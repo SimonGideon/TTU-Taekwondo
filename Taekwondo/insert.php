@@ -15,4 +15,14 @@ session_start();
    if ($password == $cpassword) {
       $sql = "SELECT * FROM users WHERE email='$email'";
       $result = mysqli_query($conn, $sql);
+      if (!$result->num_rows > 0) {
+         $sql = "INSERT INTO users (first_name, last_name, birthday, gender, email, phone, Level, registration_number, password )
+             VALUES ('$first_name', '$lname', '$last_name', '$DOB', '$gender', '$email', '$phone', '$level', '$registration', 'password')";
+         $result = mysqli_query($conn, $sql);
+         if ($result) {
+            echo '<script>alert("Successful Registered")</script>'
+         }
+      }
+   }else {
+      echo '<script>alert("Successful Registered")</script>'
    }
