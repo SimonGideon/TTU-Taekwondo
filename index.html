@@ -58,7 +58,9 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">TTU<em> Taekwondo</em></a>
+                        <div>
+                            <a href="#" class="logo">TTU<em> Taekwondo</em></a>
+                        </div>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
@@ -107,8 +109,7 @@
                 </div>
                 <div class="row" style="font-family: Brush script MT;">
                     <div class="col-lg-md-4">
-                        <img class="" src="assets/images/captain_carlos.png" alt="">
-
+                        <img src="assets/images/captain_carlos-2.png" alt="captain-img">
                     </div>
                     <div class="col" id="captain-word">
                         <h2>
@@ -173,12 +174,14 @@
     <section class="section" id="our-classes">
         <div class="container">
             <div class="row">
-                <div class="emoji-think">
-                    <img src="assets/images/thinking.png" alt="thinking">
-                </div>
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="section-heading">
-                        <h2>Know More <em>About Taekwondo</em></h2>
+                <div class="thinkart">
+                    <div class="emoji-think">
+                        <img src="assets/images/thinking.png" alt="thinking">
+                    </div>
+                    <div class="col-lg-6 offset-lg-3" id="think-text">
+                        <div class="section-heading">
+                            <h2>Know More <em>About Taekwondo</em></h2>
+                        </div>
                     </div>
                 </div>
                 <div class="container text-lg-center" style="text-align: justify;">
@@ -378,70 +381,29 @@
                     </div>
                 </div>
             </div>
-
         </div>
         </div>
         <!-- contact section begins here -->
         <section class="contacts" id="contact-us">
             <div class="container">
-                <div class="col-lg-6 offset-lg-3">
+                <div>
                     <div class="section-heading">
-                        <h2>Contact <em>Us! </em></h2>
+                        <h2>BECOME <em>A MEMBER! </em></h2>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-5 " id="contacts"  >
-                        <p><i class="fa-brands fa-whatsapp" style="color: #ed563b;"></i></p> 
-                        <p><i class="fa-solid fa-phone"></i></p>
-                        <p><i class="fa-brands fa-facebook"></i></p> 
-                        <p><i class="fa-brands fa-youtube"></i></p>                  
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 card" style="margin: auto;">
-                        <h4 class="line-height-1_4 mb-4 mt-4" style="color: #ed563b;">Get in Touch</h4>
-                        <div class="custom-form mt-4 mt-lg-0">
-                            <div id="message"></div>
-                            <form method="post" action="#" name="contact-form" id="contact-form">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group app-label">
-                                            <label for="name" class="text-muted">First Name</label>
-                                            <input name="name" id="name" type="text" class="form-control"
-                                                placeholder="Enter. . .">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group app-label">
-                                            <label for="name" class="text-muted">Last Name</label>
-                                            <input name="name" id="name1" type="text" class="form-control"
-                                                placeholder="Enter. . .">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group app-label">
-                                            <label for="name" class="text-muted">Your Email</label>
-                                            <input name="email" id="email" type="email" class="form-control"
-                                                placeholder="Email. . .">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group app-label">
-                                            <label for="name" class="text-muted">Type Massage</label>
-                                            <textarea name="comments" id="comments" rows="4" class="form-control"
-                                                placeholder="Message. . ."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <button type="submit" id="submit" name="send" class="btn btn-primary">Send
-                                            Message</button>
-                                        <div id="simple-msg"></div>
-                                    </div>
-                                </div>
-                            </form>
+                    <div class="contacts-section">
+                            <div class="form">
+                                <form action="https://formspree.io/f/moqrolqj" method="post">
+                                    <input type="text" placeholder="Full names" maxlength="30" required>
+                                    <input name="Mobile-Number" id="email" type="number" placeholder="Phone number" required>
+                                    <textarea id="message" name="message" placeholder="write your message here" maxlength="500" required></textarea>
+                                    <br>
+                                    <button class="sub-btn" type="submit">Get in Touch</button>
+                                </form>
+                            </div>
                         </div>
-                    </div>
+                    </div>      
                 </div>
+                
             </div>
         </section>
         <!-- ***** Footer Start ***** -->

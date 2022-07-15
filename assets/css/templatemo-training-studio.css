@@ -206,7 +206,7 @@ body {
 .emoji-think img {
   position: absolute;
   width: 20%;
-  height: 40% !important;
+  height: 20% !important;
 }
 
 .section-heading h2 {
@@ -336,7 +336,7 @@ header
 .header-area .main-nav .logo {
   line-height: 80px;
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   float: left;
@@ -563,6 +563,7 @@ header
 
   .header-area .main-nav .logo {
     color: #1e1e1e;
+    font-size: 110%;
   }
 
   .header-area.header-sticky .nav li a:hover,
@@ -1029,6 +1030,20 @@ schedule
   text-align: center;
 }
 
+.thinkart {
+  width: 100%;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
+}
+
 #schedule .filters ul li {
   list-style: none;
   display: inline;
@@ -1298,13 +1313,34 @@ responsive
   .trainer-item {
     margin-bottom: 30px;
   }
-
-
 }
 
 @media (max-width: 450px) {
   .feature-item .right-content a.text-button {
     margin-left: 130px;
   }
-  
+
+  .header-area .main-nav .logo {
+    font-size: 90%;
+  }
+
+  .emoji-think img {
+    display: none;
+  }
+
+  #think-text {
+    font-size: 100%;
+  }
+
+  .thinkart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: -10%;
+  }
+
+  .trainer-item {
+    margin: auto;
+  }
 }
