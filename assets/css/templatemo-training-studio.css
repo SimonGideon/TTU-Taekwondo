@@ -199,14 +199,14 @@ body {
 
 .section-heading {
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .emoji-think img {
   position: absolute;
   width: 20%;
-  height: 40% !important;
+  height: 20% !important;
 }
 
 .section-heading h2 {
@@ -255,6 +255,26 @@ body {
 
 .dark-bg p {
   color: #fff;
+}
+
+.contacts-section button {
+  background-color: #ed563b;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 3px solid whitesmoke;
+  border-radius: 8px;
+}
+
+contacts-section button :hover {
+  border: 3px solid #ed563b;
+  background-color: transparent;
+  box-shadow: #1e1e1e;
+}
+
+contacts-section form input {
+  border: 3px solid #ed563b;
 }
 
 .main-button a {
@@ -336,7 +356,7 @@ header
 .header-area .main-nav .logo {
   line-height: 80px;
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 800;
   text-transform: uppercase;
   float: left;
@@ -545,6 +565,25 @@ header
   color: #ed563b;
 }
 
+.contacts-section form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40%;
+  margin-left: 40%;
+  border-radius: 8px;
+  margin-top: -5%;
+} 
+
+.contacts-section input {
+  margin-bottom: 5%;
+  height: 2rem;
+}
+
+.contacts-section button {
+  max-width: 50%;
+  align-self: center;
+}
+
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 12px;
@@ -563,6 +602,7 @@ header
 
   .header-area .main-nav .logo {
     color: #1e1e1e;
+    font-size: 110%;
   }
 
   .header-area.header-sticky .nav li a:hover,
@@ -605,6 +645,13 @@ header
     transition: all 0s ease 0s;
     margin-left: 0px;
   }
+  .contacts-section form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 8px;
+  } 
 
   .header-area .main-nav .nav li:first-child {
     border-top: 1px solid #eee;
@@ -1010,6 +1057,12 @@ schedule
   letter-spacing: 0.25px;
 }
 
+/* contact form */
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .schedule-table.filtering .ts-item {
   opacity: 0;
   transition: all 0.5s;
@@ -1027,6 +1080,20 @@ schedule
 #schedule .filters ul {
   padding: 0;
   text-align: center;
+}
+
+.thinkart {
+  width: 100%;
+}
+
+#contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
 }
 
 #schedule .filters ul li {
@@ -1120,23 +1187,6 @@ trainers
   margin-top: 0px;
 }
 
-.section-heading .social-icons ul li {
-  display: inline-block;
-  margin-right: 12px;
-}
-
-.section-heading ul.social-icons li:last-child {
-  margin-right: 0px;
-}
-
-.section-heading ul.social-icons li a {
-  color: #232d39;
-  transition: all .3s;
-}
-
-.section-heading ul.social-icons li a:hover {
-  color: #ed563b;
-}
 
 .social-icons i {
   padding-right: 10px;
@@ -1281,6 +1331,13 @@ responsive
   .main-banner .caption h2 {
     font-size: 64px;
   }
+  .contacts-section form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30%;
+    margin-left: 30%;
+    border-radius: 8px;
+  } 
 
   #features {
     margin-bottom: 110px;
@@ -1298,13 +1355,42 @@ responsive
   .trainer-item {
     margin-bottom: 30px;
   }
-
-
 }
 
 @media (max-width: 450px) {
   .feature-item .right-content a.text-button {
     margin-left: 130px;
   }
-  
+
+  .header-area .main-nav .logo {
+    font-size: 90%;
+  }
+
+  .emoji-think img {
+    display: none;
+  }
+
+  #think-text {
+    font-size: 100%;
+  }
+
+  .thinkart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: -10%;
+  }
+
+  .trainer-item {
+    margin: auto;
+  }
+
+  .contacts-section form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 8px;
+  } 
 }
